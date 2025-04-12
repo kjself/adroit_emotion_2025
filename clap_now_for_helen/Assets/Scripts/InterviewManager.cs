@@ -40,9 +40,27 @@ public class InterviewManager : MonoBehaviour
             }
         }
     }
-    public static int CuePressed(CueType response)
+    public static void CuePressed(CueType cueType)
     {
-        return 0;
+        DisplayCue();
+        PlayCueAudio();
+        Score();
+    }
+    
+    private static void DisplayCue()
+    {
+        Debug.Log("Displaying Cue");
+    }
+
+    private static void PlayCueAudio()
+    {
+        Debug.Log("Playing Cue Audio");
+
+    }
+
+    private static void Score()
+    {
+
     }
         
 }

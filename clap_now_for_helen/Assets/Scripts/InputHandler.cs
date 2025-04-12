@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
-    private CueType cue;
-    public InterviewManager IManager;
-    //private Dictionary<string, CueType> cueDict;
+    private Dictionary<string, CueType> cueDict;
 
-    // Start is called before the first frame update
-    void Start()
+
+
+// Start is called before the first frame update
+void Start()
     {
-        
+        cueDict = new Dictionary<string, CueType>()
+        {
+            {"e", CueType.CLAP},
+            { "r", CueType.LAUGH},
+            { "t", CueType.IMPRESSED},
+            { "c", CueType.GASP},
+            { "v", CueType.SCREAM}
+        };
     }
 
     // Update is called once per frame
@@ -19,33 +26,15 @@ public class InputHandler : MonoBehaviour
     {
         if(Input.anyKey)
         {
-            if(Input.GetKeyDown("e"))
+            foreach (KeyValuePair<string, CueType> CueDictPair in cueDict)
             {
-                cue = CueType.CLAP;
+                if (Input.GetKeyDown(CueDictPair.Key))
+                {
+                    InterviewManager.CuePressed(CueDictPair.Value);
+                    break;
+                }
             }
-            if(Input.GetKeyDown("r"))
-            {
-                cue = CueType.LAUGH;
-            }
-            if (Input.GetKeyDown("t"))
-            {
-                cue = CueType.IMPRESSED;
-            }
-            if (Input.GetKeyDown("c"))
-            {
-                cue = CueType.GASP;
-            }
-            if (Input.GetKeyDown("v"))
-            {
-                cue = CueType.SCREAM;
-            }
-            int response = InterviewManager.CuePressed(cue);
         }
 
     }
-    public CueType getCue()
-    {
-        return cue;
-    }
-
 }
