@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is our audio manager, for tracking which sounds are played at a given time on a given cue.
+/// </summary>
 public class audioManager : MonoBehaviour
 {
 
@@ -32,7 +35,7 @@ public class audioManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        Play("LevelMusic");
+        
     }
 
     /* This function finds a sound with the same name as the name entered into the function parameter.
