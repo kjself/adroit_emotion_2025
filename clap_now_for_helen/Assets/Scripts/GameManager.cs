@@ -8,8 +8,16 @@ public class GameManager : MonoBehaviour
     public TMP_Text text;
     float currentTime = 0;
 
-    float targetStart = 2;
-    float targetEnd = 5;
+    Interview interview;
+
+    public GameManager()
+    {
+        //var d1 = new Dialog(
+        //    ["hi there", "sam here"]
+        //    );
+        //interview = new Interview();
+
+    }
 
     // Update is called once per frame
     void Update()

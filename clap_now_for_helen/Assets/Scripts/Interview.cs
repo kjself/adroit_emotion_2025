@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Interview : MonoBehaviour
+public class Interview 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    InterviewSegment[] sequence;
 
-    // Update is called once per frame
-    void Update()
+    public Interview(InterviewSegment[] sequence)
     {
-        
+        this.sequence = sequence;
     }
 }

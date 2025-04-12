@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
-
-public class Dialog : MonoBehaviour
+public class Dialog 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string[] subtitles;
+    public AudioClip voiceOver;
 
-    // Update is called once per frame
-    void Update()
+    public Dialog(string[] _subtitles)
     {
-        
+        subtitles = _subtitles;
     }
 }

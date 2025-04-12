@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class InterviewSegment : MonoBehaviour
+public class InterviewSegment
 {
-    // Start is called before the first frame update
-    void Start()
+    Dialog[] dialogs;
+    CueType cueType;
+
+    public InterviewSegment(Dialog[] dialogs, CueType cueType)
     {
-        
+        this.dialogs = dialogs;
+        this.cueType = cueType;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
