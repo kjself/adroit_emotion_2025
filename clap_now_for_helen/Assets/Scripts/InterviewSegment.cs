@@ -1,12 +1,16 @@
 public class InterviewSegment
 {
-    Dialog[] dialogs;
-    CueType cueType;
+    public Dialog dialog;
+    public CueType cueType;
+    public float startTime; 
+    public float durationSeconds;
 
-    public InterviewSegment(Dialog[] dialogs, CueType cueType)
+    public InterviewSegment(Dialog dialog, CueType cueType, float startTime, float duration)
     {
-        this.dialogs = dialogs;
+        this.dialog = dialog;
         this.cueType = cueType;
+        this.startTime = startTime;
+        this.durationSeconds = duration;
     }
 
 }

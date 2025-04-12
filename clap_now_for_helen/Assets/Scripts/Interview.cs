@@ -1,6 +1,6 @@
 public class Interview 
 {
-    InterviewSegment[] sequence;
+    public InterviewSegment[] sequence;
 
     public Interview(InterviewSegment[] sequence)
     {
