@@ -40,4 +40,9 @@ public class InterviewManager : MonoBehaviour
             }
         }
     }
+    public static int CuePressed(CueType response)
+    {
+        
+    }
+        
 }

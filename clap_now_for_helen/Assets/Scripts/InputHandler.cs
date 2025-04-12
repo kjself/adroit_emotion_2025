@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private CueType cue;
+    public InterviewManager IManager;
     //private Dictionary<string, CueType> cueDict;
 
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class InputHandler : MonoBehaviour
             {
                 cue = CueType.SCREAM;
             }
+            int response = InterviewManager.CuePressed(cue);
         }
 
     }
