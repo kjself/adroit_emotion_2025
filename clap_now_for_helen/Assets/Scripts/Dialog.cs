@@ -13,7 +13,7 @@ public class Dialog
 
     public void Play()
     {
-        Debug.Log("Playing dialog: " + subtitle);
+        SubtitleManager.instance.ChangeSubtitle(subtitle);
         isPlaying = true;
     }
 }

@@ -15,7 +15,7 @@ public class InterviewManager : MonoBehaviour
         var d2 = new Dialog("sp thsi is seperate");
         var s2 = new InterviewSegment(d2, CueType.NONE, 3, 3);
         var d3 = new Dialog("");
-        var s3 = new InterviewSegment(d1, CueType.CLAP, 6, 5);
+        var s3 = new InterviewSegment(d3, CueType.CLAP, 6, 5);
 
         var sequence = new InterviewSegment[] { s1, s2, s3 };
         interview = new Interview(sequence);
@@ -42,7 +42,7 @@ public class InterviewManager : MonoBehaviour
     }
     public static int CuePressed(CueType response)
     {
-        
+        return 0;
     }
         
 }
