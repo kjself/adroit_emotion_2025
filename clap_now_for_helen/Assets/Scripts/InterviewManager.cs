@@ -10,6 +10,9 @@ public class InterviewManager : MonoBehaviour
     int nextSegmentIndex = 0;
     CueType activeCue = CueType.NONE;
     public TMP_Text cueDisplay;
+    float interviewTime;
+    private ShowCard cardDisplay;
+    
 
     public AnimationCurve curve;
 
@@ -62,6 +65,9 @@ public class InterviewManager : MonoBehaviour
         var sequence = s;
         interview = new Interview(sequence);
 
+        //total expected time of a given interview
+        interviewTime = interview.sequence[interview.sequence.Length - 1].startTime + interview.sequence[interview.sequence.Length - 1].durationSeconds;
+
         //print(h1);
         //print(h2);
         
@@ -70,7 +76,7 @@ public class InterviewManager : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-
+        print(nextSegmentIndex);
         for (int i = nextSegmentIndex; i < interview.sequence.Length; i++)
         {
         
@@ -83,11 +89,17 @@ public class InterviewManager : MonoBehaviour
                 //    SpriteManager.instance.ChangeSprite(change.Key, change.Value);
                 //}
                 nextSegmentIndex = i+1;
+                
             }
             else
             {
                 break;
             }
+        }
+
+        if (currentTime >= interviewTime)
+        {
+            cardDisplay.CardShow();
         }
 
         if (activeCue != CueType.NONE)
