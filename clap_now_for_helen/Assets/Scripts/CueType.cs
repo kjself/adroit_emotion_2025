@@ -7,7 +7,7 @@ public enum CueType
     NONE,
     CLAP,
     LAUGH,
-    IMPRESSED,
+    OOH,
     BOO,
     GASP,
     SCREAM

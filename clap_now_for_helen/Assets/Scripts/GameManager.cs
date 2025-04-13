@@ -4,11 +4,14 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(InterviewManager))]
+[RequireComponent(typeof(InputHandler))]
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;//this is a singleton
 
     public InterviewManager interviewManager;
+    
 
     private void Awake()
     {

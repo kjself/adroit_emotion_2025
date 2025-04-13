@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private Dictionary<string, CueType> cueDict;
-
+    private InterviewManager interviewManager;
 
 
 // Start is called before the first frame update
@@ -15,26 +15,38 @@ void Start()
         {
             {"e", CueType.CLAP},
             { "r", CueType.LAUGH},
-            { "t", CueType.IMPRESSED},
+            { "t", CueType.OOH},
             { "c", CueType.GASP},
             { "v", CueType.SCREAM}
         };
+        interviewManager = GetComponent<InterviewManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.anyKey)
+        if(Input.anyKeyDown)
         {
             foreach (KeyValuePair<string, CueType> CueDictPair in cueDict)
             {
                 if (Input.GetKeyDown(CueDictPair.Key))
                 {
-                    InterviewManager.CuePressed(CueDictPair.Value);
+                    interviewManager.CuePressed(CueDictPair.Value);
                     break;
                 }
             }
         }
+     
+
+        foreach (KeyValuePair<string, CueType> CueDictPair in cueDict)
+        {
+            if (Input.GetKeyUp(CueDictPair.Key))
+            {
+                interviewManager.CuePressStop(CueDictPair.Value);
+                break;
+            }
+        }
+        
 
     }
 }
