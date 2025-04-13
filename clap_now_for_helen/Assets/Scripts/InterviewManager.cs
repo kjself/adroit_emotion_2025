@@ -72,38 +72,31 @@ public class InterviewManager : MonoBehaviour
         if (activeCue == cueType)
         {
             SetCueDisplay(CueType.NONE);
-            PlayCueAudio(cueType);
+            StopCueAudio(cueType);
             activeCue= CueType.NONE;
             //Debug.Log(cueType + " Button Up");
         }
     }
 
     //this could fail if CueDisplay is already set
-    private bool SetCueDisplay(CueType cueType)
+    private void SetCueDisplay(CueType cueType)
     {
-        //maybe dont do this
-        //check if cueDisplay.text == "" 
-        //then set
-        //else return error
-        //Debug.Log("Displaying Cue");
         if(activeCue != cueType)
         {
-            //Debug.Log(cueType);
             cueDisplay.text = cueType.ToString();
         }
-
-        else
-        {
-            Debug.Log("What the fuck bro");
-        }
-        return true;
     }
 
     private void PlayCueAudio(CueType cueType)
     {
-        //Debug.Log("Playing Cue Audio");
-
+        audioManager.Instance.PlayCueAudio(cueType);
     }
+
+    private void StopCueAudio(CueType cueType)
+    {
+        audioManager.Instance.StopCueAudio(cueType);
+    }
+
 
     private void Score(InterviewSegment segment)
     {

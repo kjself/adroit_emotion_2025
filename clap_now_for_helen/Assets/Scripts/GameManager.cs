@@ -9,8 +9,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;//this is a singleton
-
+    [HideInInspector]
     public InterviewManager interviewManager;
+    [HideInInspector]
     public float score;
 
     private void Awake()
