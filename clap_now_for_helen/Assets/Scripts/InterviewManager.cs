@@ -76,7 +76,7 @@ public class InterviewManager : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        print(nextSegmentIndex);
+        //print(nextSegmentIndex);
         for (int i = nextSegmentIndex; i < interview.sequence.Length; i++)
         {
         

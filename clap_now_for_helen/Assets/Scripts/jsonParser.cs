@@ -12,8 +12,19 @@ public class jsonParser : MonoBehaviour
 {
     public TextAsset jsonFile;
 
-    string test = "{\"name\": \"Hiat\", \"age\": 1, \"cueType\": \"none\", \"spriteChanges\": [{\"changeGuy\": \"spriteName\"}, {\"changeGuy\": \"Podboy\"}]}";
-    string test1 = "{\"a1\":[1,2,3,5]}";
+    string test0 = @" {
+    ""startTime"": 0,
+    ""duration"": 3,
+    ""cueType"": ""none"",
+    ""subtitle"": ""Our next guest– we’re dying to see him, I’m dying to get to know him, he’s trying… method acting?"",
+    ""audioFileName"": ""interview1Helen1.mp3"",
+    ""spriteChanges"": [
+    	{""helen"": ""helenToCamera.png""},
+    	{""chair"": ""guestChair.png""}
+    ]
+  }
+";
+
 
 
     public class TestClass
@@ -26,18 +37,50 @@ public class jsonParser : MonoBehaviour
 
     public class TestClass2
     {
-        public string changeGuy;
+        public string helen;
+        public string chair;
+
 
     }
-    
+
     public class Test3
-   
+
     {
-        public int[] a1;
+        public Dictionary<string, string> dict;
     }
+
+    public class SegmentIntermediary
+    {
+        public float startTime;
+        public float duration;
+        public string cueType;
+        public string subtitle;
+        public string audioFileName;
+        //public TestClass2[] spriteChanges;
+    }
+
+    [System.Serializable]
+    public class SpriteChange
+    {
+        public string helen;
+        public string chair;
+    }
+
+    [System.Serializable]
+    public class InterviewData
+    {
+        public int startTime;
+        public float duration;
+        public string cueType;
+        public string subtitle;
+        public string audioFileName;
+        public Dictionary<string, string> spriteChanges; // An array of SpriteChange objects
+    }
+
+
     void Start()
     {
-        print(test);
+        //print(test);
         // Load the JSON file from the Resources folder
         //TextAsset jsonFile = Resources.Load<TextAsset>("data");
         //List<Item> items = JsonConvert.DeserializeObject<List<Item>>(test);
@@ -53,71 +96,32 @@ public class jsonParser : MonoBehaviour
         //print(str);
 
 
-
-        TestClass myData = JsonUtility.FromJson<TestClass>(test);
+        var segment = JsonUtility.FromJson<InterviewData>(test0);
 
         string targetKey = "\"spriteChanges\"";
-        int startIndex = test.IndexOf(targetKey);
-        startIndex = test.IndexOf("[", startIndex); //go to start of array
+        int startIndex = test0.IndexOf(targetKey);
+        startIndex = test0.IndexOf("[", startIndex); //go to start of array
 
-        int end = test.IndexOf("]", startIndex);//fine end of array
+        int end = test0.IndexOf("]", startIndex);//fine end of array
 
         //int newStart = startIndex + targetKey.Length + 1;
-        var fuck = test.Substring(startIndex+1, end - startIndex-1);//add/sub 1 to cut out [ and ]
+        var fuck = test0.Substring(startIndex + 1, end - startIndex - 1);//add/sub 1 to cut out [ and ]
 
-        print(fuck);
+        //print(fuck);
+        //segment.spriteChanges = JsonUtility.FromJson<Dictionary<string, string>>("{" + fuck+"}");
 
-        var chargeStrings= fuck.Split(',');
-        List<TestClass2> smallMan = new List<TestClass2>();
+        var chargeStrings = fuck.Split(',');
+        var newDict = new Dictionary<string, string>();
         foreach (var chargeString in chargeStrings)
         {
-        print(chargeString);
-        smallMan.Add(JsonUtility.FromJson<TestClass2>(chargeString));
-
+            //print(chargeString);
+            var cleanStr = chargeString.Replace("{", "").Replace("}", "").Trim();
+            var dictPairStr = cleanStr.Split(':');
+            newDict.Add(dictPairStr[0], dictPairStr[1]);
         }
 
+        segment.spriteChanges = newDict;
 
-
-        print(smallMan);
-        myData.spriteChanges = smallMan.ToArray();
-
-        print("end");
-        //var myarrayData = JsonUtility.FromJson<Test3>(test1);
-        //foreach(var item in myarrayData.a1)
-        //{
-        //print(item);
-
-        //}
-
-        //if (jsonFile != null)
-        //{
-        //    // Parse the JSON data
-        //    //InterviewSegment myData = JsonUtility.FromJson<InterviewSegment>(jsonFile.text);
-        //    //TestClass myData = JsonUtility.FromJson<TestClass>(test);
-
-        //    print(myData.name);
-        //    print(myData.age);
-        //    print(myData.cueType);
-        //    print(myData.spriteChanges[0]);
-        //    print(myData.spriteChanges[1]);
-
-        //    // Use the parsed data
-        //    //Debug.Log("Duration: " + myData.durationSeconds);
-        //    //Debug.Log("Start time: " + myData.startTime);
-        //    //Debug.Log("Cue type: " + myData.cueType);
-        //}
-        //else
-        //{
-        //    Debug.LogError("Failed to load JSON file.");
-        //}
+        //print("end");
     }
 }
-
-
-//"duration": 3,
-//    "cueType": "none",
-//    "subtitle": "Our next guest– we’re dying to see him, I’m dying to get to know him, he’s trying… method acting?",
-//    "audioFileName": "interview1Helen1.mp3",
-//    "spriteChanges": [
-//    	{"helen": "helenToCamera.png"},
-//    	{ "chair": "guestChair.png"}

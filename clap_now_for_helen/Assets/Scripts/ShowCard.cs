@@ -15,7 +15,7 @@ public class ShowCard : MonoBehaviour
     {
         cGroup.alpha = 0;
     }
-    void CardShow()
+    public void CardShow()
     {
         cGroup.alpha = 1;
         scoreText.text = score.ToString();
