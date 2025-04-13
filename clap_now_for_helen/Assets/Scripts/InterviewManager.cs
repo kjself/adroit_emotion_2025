@@ -78,7 +78,6 @@ public class InterviewManager : MonoBehaviour
         }
     }
 
-    //this could fail if CueDisplay is already set
     private void SetCueDisplay(CueType cueType)
     {
         if(activeCue != cueType)
@@ -100,13 +99,11 @@ public class InterviewManager : MonoBehaviour
 
     private void Score(InterviewSegment segment)
     {
-        //Debug.Log("Seg: " + segment.cueType + " "+segment.dialog.subtitle);
         if(activeCue== segment.cueType)
         {
             var curveHeight = curve.Evaluate((currentTime - segment.startTime) / segment.durationSeconds);
             GameManager.instance.score += curveHeight * Time.deltaTime;
         }
-        //Debug.Log("Score: " + GameManager.instance.score);
     }
         
 }
