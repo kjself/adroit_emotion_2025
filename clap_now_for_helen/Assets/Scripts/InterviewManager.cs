@@ -13,19 +13,58 @@ public class InterviewManager : MonoBehaviour
 
     public AnimationCurve curve;
 
+    [SerializeField]
+    private Sprite h1;
+    [SerializeField]
+    private Sprite h2;
+    public Sprite g1;
+    public Sprite g2;
+
+    Dialog[] d = new Dialog[4];
+    InterviewSegment[] s = new InterviewSegment[4];
+
     public InterviewManager()
     {
-        var d1 = new Dialog("1st");
-        var s1 = new InterviewSegment(d1, CueType.NONE, 0, 3);
-        var d2 = new Dialog("2 hi ther");
-        var s2 = new InterviewSegment(d2, CueType.NONE, 3, 5);
-        var d3 = new Dialog("");
-        var s3 = new InterviewSegment(d3, CueType.CLAP, 8, 5);
-        var d4 = new Dialog("4 start again!!!");
-        var s4 = new InterviewSegment(d4, CueType.NONE, 13, 5);
+        d[0] = new Dialog("1st");
+        s[0] = new InterviewSegment(d[0], CueType.NONE, 0, 3);
+        d[1] = new Dialog("2 hi ther");
+         s[1] = new InterviewSegment(d[1], CueType.NONE, 3, 5);
+         d[2] = new Dialog("");
+         s[2] = new InterviewSegment(d[2], CueType.CLAP, 8, 5);
+        d[3] = new Dialog("4 start again!!!");
+        s[3] = new InterviewSegment(d[3], CueType.NONE, 13, 5);
 
-        var sequence = new InterviewSegment[] { s1, s2, s3, s4 };
+    }
+
+    private void Start()
+    {
+        s[0].spriteChanges = new Dictionary<string, Sprite>()
+        {
+            {"Helen", h1},
+            {"Guest",  g1}
+        };
+
+        s[1].spriteChanges = new Dictionary<string, Sprite>()
+        {
+            {"Helen", h2},
+            {"Guest",  g2}
+
+        };
+        s[2].spriteChanges = new Dictionary<string, Sprite>()
+        {
+            {"Helen", h1}
+        };
+        s[3].spriteChanges = new Dictionary<string, Sprite>()
+        {
+            {"Helen", h2}
+        };
+
+        var sequence = s;
         interview = new Interview(sequence);
+
+        print(h1);
+        print(h2);
+        
     }
 
     void Update()
@@ -39,7 +78,7 @@ public class InterviewManager : MonoBehaviour
             if (seg.startTime <= currentTime && !seg.dialog.isPlaying)
             {
                 seg.dialog.Play();
-                foreach(var change in seg.spriteChanges)
+                foreach (var change in seg.spriteChanges)
                 {
                     SpriteManager.instance.ChangeSprite(change.Key, change.Value);
                 }

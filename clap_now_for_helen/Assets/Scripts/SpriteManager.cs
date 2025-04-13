@@ -22,6 +22,17 @@ public class SpriteManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        //Invoke("Test", 2);
+
+    }
+
+    void Test()
+    {
+        ChangeSprite("Helen", "helenAnnoyed");
+    }
+
     public void ChangeSprite(string imageName, Sprite newSprite)
     {
         Image image = Array.Find(images, image => image.name == imageName);
