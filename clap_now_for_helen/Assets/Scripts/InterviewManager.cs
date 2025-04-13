@@ -39,6 +39,10 @@ public class InterviewManager : MonoBehaviour
             if (seg.startTime <= currentTime && !seg.dialog.isPlaying)
             {
                 seg.dialog.Play();
+                foreach(var change in seg.spriteChanges)
+                {
+                    SpriteManager.instance.ChangeSprite(change.Key, change.Value);
+                }
                 nextSegmentIndex = i+1;
             }
             else
@@ -62,9 +66,7 @@ public class InterviewManager : MonoBehaviour
             PlayCueAudio(cueType);
             activeCue = cueType;
             //Debug.Log(cueType + " Button Down");
-
         }
-
     }
 
     public void CuePressStop(CueType cueType)

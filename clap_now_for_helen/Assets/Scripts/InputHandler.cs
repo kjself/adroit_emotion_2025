@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
     private Dictionary<string, CueType> cueDict;
     private InterviewManager interviewManager;
+
+    public Sprite h1;
+    public Sprite h2;
+
+    public Image Helen;
 
 
 // Start is called before the first frame update
@@ -47,6 +53,14 @@ void Start()
             }
         }
         
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Helen.sprite = h1;
+        }
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            Helen.sprite = h2;
 
+        }
     }
 }
