@@ -1434,6 +1434,7 @@ GameObject:
   - component: {fileID: 1330094967}
   - component: {fileID: 1330094966}
   - component: {fileID: 1330094968}
+  - component: {fileID: 1330094969}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1468,7 +1469,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4910db7e3abda469d6128ac6917d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interviewManager: {fileID: 1330094967}
   score: 0
 --- !u!114 &1330094967
 MonoBehaviour:
@@ -1489,10 +1489,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  h1: {fileID: 21300000, guid: 689f2793696cb3d41b41917613bbde6c, type: 3}
-  h2: {fileID: 21300000, guid: 67bd4e1eb17f72d438b80a7e3c33bfa1, type: 3}
-  g1: {fileID: 21300000, guid: 173ceb50a641e2440ad00da1195169cd, type: 3}
-  g2: {fileID: 21300000, guid: 8fc44b7dd9141d04abacba4498bce98a, type: 3}
 --- !u!114 &1330094968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1508,6 +1504,19 @@ MonoBehaviour:
   h1: {fileID: 21300000, guid: 7644f6c80d12b7744b1a39c814f0e750, type: 3}
   h2: {fileID: 21300000, guid: 689f2793696cb3d41b41917613bbde6c, type: 3}
   Helen: {fileID: 551000795}
+--- !u!114 &1330094969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330094964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d546d265e6d74a44965f09fbb6204cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jsonFile: {fileID: 4900000, guid: 8397b3b5c696548458f5cf822c71ac5d, type: 3}
 --- !u!1 &1389096159
 GameObject:
   m_ObjectHideFlags: 0

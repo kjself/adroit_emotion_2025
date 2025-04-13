@@ -71,7 +71,9 @@ public class jsonParser : MonoBehaviour
         };
 
         //TextAsset jsonFile = Resources.Load<TextAsset>("data");
-        var jsonFileText = json;
+
+        //var jsonFileText = json;
+        var jsonFileText = jsonFile.text;
         var segStrings = jsonFileText.Trim().Split(";");
         var segments = new List<SegmentIntermediary>();
         foreach(var segString in segStrings)
@@ -106,17 +108,19 @@ public class jsonParser : MonoBehaviour
 
         //print(fuck);
         //segment.spriteChanges = JsonUtility.FromJson<Dictionary<string, string>>("{" + fuck+"}");
-
-        var chargeStrings = fuck.Split(',');
         var newDict = new Dictionary<string, string>();
-        foreach (var chargeString in chargeStrings)
+        if(fuck != "")// there are spriteChanges (not, newDict remains empty)
         {
-            //print(chargeString);
-            var cleanStr = chargeString.Replace("{", "").Replace("}", "").Trim();
-            var dictPairStr = cleanStr.Split(':');
-            newDict.Add(dictPairStr[0], dictPairStr[1]);
+            
+            var chargeStrings = fuck.Split(',');
+            foreach (var chargeString in chargeStrings)
+            {
+                //print(chargeString);
+                var cleanStr = chargeString.Replace("{", "").Replace("}", "").Trim();
+                var dictPairStr = cleanStr.Split(':');
+                newDict.Add(dictPairStr[0], dictPairStr[1]);
+            }
         }
-
         segment.spriteChanges = newDict;
         return segment;
     }

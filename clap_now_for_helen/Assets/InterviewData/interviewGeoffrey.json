@@ -1,277 +1,275 @@
-[
-  {
-    "startTime": 0,
-    "duration": 8,
-    "cueType": "none",
-    "subtitle": "Our next guest– we’re dying to see him, I’m dying to get to know him, he’s trying… method acting?",
-    "audioFileName": "interview1Helen1.mp3",
-    "spriteChanges": [
-    	{"helen": "helenToCamera.png"},
-    	{"chair": "guestChair.png"}
-    ]
-  };
-  {
-    "startTime": 8,
-    "duration": 2,
-    "cueType": "none",
-    "subtitle": "Geoffrey Bloom!",
-    "audioFileName": "interview1Helen2.mp3",
-    "spriteChanges": [
-    	{"helen": "helenHappy.png"}
-    ]
-  };
-  {
-    "startTime": 10,
-    "duration": 5,
-    "cueType": "clap",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": [
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 15,
-    "duration": 5,
-    "cueType": "none",
-    "subtitle": "So, Geoffrey, tell us about this new role you’re… taking on.",
-    "audioFileName": "interview1Helen3.mp3",
-    "spriteChanges": [
-    	{"helen": "helenSerious.png"}
-    ]
-  };
-  {
-    "startTime": 20,
-    "duration": 5,
-    "cueType": "none",
-    "subtitle": "Well, Helen, I have just been so excited to have this opportunity!",
-    "audioFileName": "interview1Geoffrey1.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 25,
-    "duration": 5,
-    "cueType": "none",
-    "subtitle": "Portraying a crab- it is a big undertaking, and I plan to do it justice.",
-    "audioFileName": "interview1Geoffrey2.mp3",
-    "spriteChanges": []
-  };
-  {
-    "startTime": 30,
-    "duration": 8,
-    "cueType": "none",
-    "subtitle": "I have been putting in the work, doing my research– Did you know that crabs have a unique greeting for guests?",
-    "audioFileName": "interview1Geoffrey3.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyThinking.png"}
-    ]
-  };
-  {
-    "startTime": 38,
-    "duration": 3,
-    "cueType": "none",
-    "subtitle": "Really! Please tell me more!",
-    "audioFileName": "interview1Helen4.mp3",
-    "spriteChanges": [
-    	{"helen": "helenHappy.png"}
-    ]
-  };
-  {
-    "startTime": 41,
-    "duration": 9,
-    "cueType": "none",
-    "subtitle": "Well, I visited an island community in preparation for the role, and when I got there, all the children ran right up to me…",
-    "audioFileName": "interview1Geoffrey4.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 50,
-    "duration": 6,
-    "cueType": "none",
-    "subtitle": "…and gave me a little pinch! It’s warm down there, but you gotta make sure your sleeves are thick.",
-    "audioFileName": "interview1Geoffrey5.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 56,
-    "duration": 5,
-    "cueType": "laugh",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": []
-  };
-  {
-    "startTime": 61,
-    "duration": 3,
-    "cueType": "none",
-    "subtitle": "Absolutely fascinating.",
-    "audioFileName": "interview1Helen5.mp3",
-    "spriteChanges": [
-    	{"helen": "helenToCamera.png"}
-    ]
-  };
-  {
-    "startTime": 64,
-    "duration": 4,
-    "cueType": "none",
-    "subtitle": "But no, really, my heart is with these crustaceans.",
-    "audioFileName": "interview1Geoffrey6.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyNormal.png"},
-    	{"helen": "helenHappy.png"}
-    ]
-  };
-  {
-    "startTime": 68,
-    "duration": 6,
-    "cueType": "none",
-    "subtitle": "I am honored to portray a member of this community, and I would never take such a thing lightly.",
-    "audioFileName": "interview1Geoffrey7.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyThinking.png"}
-    ]
-  };
-  {
-    "startTime": 74,
-    "duration": 8,
-    "cueType": "none",
-    "subtitle": "This film will capture their homes beautifully, and I will capture their spirit in an even more shining fashion!",
-    "audioFileName": "interview1Geoffrey8.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 82,
-    "duration": 5,
-    "cueType": "clap",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": []
-  };
-  {
-    "startTime": 87,
-    "duration": 3,
-    "cueType": "none",
-    "subtitle": "I can only assume this has been daunting to pick up!",
-    "audioFileName": "interview1Helen6.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 90,
-    "duration": 6,
-    "cueType": "none",
-    "subtitle": "Well let me tell ya Helen, it’s been difficult to pick up a lot with these things !",
-    "audioFileName": "interview1Geoffrey9.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 96,
-    "duration": 5,
-    "cueType": "laugh",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": []
-  };
-  {
-    "startTime": 101,
-    "duration": 2,
-    "cueType": "none",
-    "subtitle": "But I’m dedicated.",
-    "audioFileName": "interview1Geoffrey10.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyThinking.png"}
-    ]
-  };
-  {
-    "startTime": 103,
-    "duration": 2,
-    "cueType": "none",
-    "subtitle": "It’s certainly admirable.",
-    "audioFileName": "interview1Helen7.mp3",
-    "spriteChanges": [
-    	{"helen": "helenToCamera.png"}
-    ]
-  };
-  {
-    "startTime": 105,
-    "duration": 6,
-    "cueType": "none",
-    "subtitle": "Buttoning a shirt: impossible. Silverware: now it’s unnecessary!",
-    "audioFileName": "interview1Geoffrey11.mp3",
-    "spriteChanges": [
-    	{"helen": "helenHappy.png"},
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 111,
-    "duration": 4,
-    "cueType": "none",
-    "subtitle": "Straws are my new best friend, and my TV only shows one channel.",
-    "audioFileName": "interview1Geoffrey12.mp3",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 115,
-    "duration": 2,
-    "cueType": "none",
-    "subtitle": "Well, I hope it’s stuck on this one!",
-    "audioFileName": "interview1Helen8.mp3",
-    "spriteChanges": [
-    	{"helen": "helenToCamera.png"},
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 117,
-    "duration": 5,
-    "cueType": "laugh",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": [
-    	{"guest": "geoffreyHappy.png"}
-    ]
-  };
-  {
-    "startTime": 122,
-    "duration": 4,
-    "cueType": "none",
-    "subtitle": "Of course! I can’t miss Clap Now for Helen.",
-    "audioFileName": "interview1Geoffrey13.mp3",
-    "spriteChanges": [
-    	{"helen": "helenHappy.png"}
-    ]
-  };
-  {
-    "startTime": 126,
-    "duration": 7,
-    "cueType": "none",
-    "subtitle": "And we’ll miss you Geoffrey. It’s been a treat to talk to you– Geoffrey Bloom, ladies and gentlemen!",
-    "audioFileName": "interview1Helen9.mp3",
-    "spriteChanges": [
-    	{"helen": "helenToCamera.png"},
-    	{"guest": "geoffreyNormal.png"}
-    ]
-  };
-  {
-    "startTime": 133,
-    "duration": 5,
-    "cueType": "clap",
-    "subtitle": "...",
-    "audioFileName": "",
-    "spriteChanges": []
-  }
+{
+"startTime": 0,
+"duration": 8,
+"cueType": "none",
+"subtitle": "Our next guest– we’re dying to see him, I’m dying to get to know him, he’s trying… method acting?",
+"audioFileName": "interview1Helen1.mp3",
+"spriteChanges": [
+    {"helen": "helenToCamera.png"},
+    {"chair": "guestChair.png"}
 ]
+};
+{
+"startTime": 8,
+"duration": 2,
+"cueType": "none",
+"subtitle": "Geoffrey Bloom!",
+"audioFileName": "interview1Helen2.mp3",
+"spriteChanges": [
+    {"helen": "helenHappy.png"}
+]
+};
+{
+"startTime": 10,
+"duration": 5,
+"cueType": "clap",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": [
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 15,
+"duration": 5,
+"cueType": "none",
+"subtitle": "So, Geoffrey, tell us about this new role you’re… taking on.",
+"audioFileName": "interview1Helen3.mp3",
+"spriteChanges": [
+    {"helen": "helenSerious.png"}
+]
+};
+{
+"startTime": 20,
+"duration": 5,
+"cueType": "none",
+"subtitle": "Well, Helen, I have just been so excited to have this opportunity!",
+"audioFileName": "interview1Geoffrey1.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 25,
+"duration": 5,
+"cueType": "none",
+"subtitle": "Portraying a crab- it is a big undertaking, and I plan to do it justice.",
+"audioFileName": "interview1Geoffrey2.mp3",
+"spriteChanges": []
+};
+{
+"startTime": 30,
+"duration": 8,
+"cueType": "none",
+"subtitle": "I have been putting in the work, doing my research– Did you know that crabs have a unique greeting for guests?",
+"audioFileName": "interview1Geoffrey3.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyThinking.png"}
+]
+};
+{
+"startTime": 38,
+"duration": 3,
+"cueType": "none",
+"subtitle": "Really! Please tell me more!",
+"audioFileName": "interview1Helen4.mp3",
+"spriteChanges": [
+    {"helen": "helenHappy.png"}
+]
+};
+{
+"startTime": 41,
+"duration": 9,
+"cueType": "none",
+"subtitle": "Well, I visited an island community in preparation for the role, and when I got there, all the children ran right up to me…",
+"audioFileName": "interview1Geoffrey4.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 50,
+"duration": 6,
+"cueType": "none",
+"subtitle": "…and gave me a little pinch! It’s warm down there, but you gotta make sure your sleeves are thick.",
+"audioFileName": "interview1Geoffrey5.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 56,
+"duration": 5,
+"cueType": "laugh",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": []
+};
+{
+"startTime": 61,
+"duration": 3,
+"cueType": "none",
+"subtitle": "Absolutely fascinating.",
+"audioFileName": "interview1Helen5.mp3",
+"spriteChanges": [
+    {"helen": "helenToCamera.png"}
+]
+};
+{
+"startTime": 64,
+"duration": 4,
+"cueType": "none",
+"subtitle": "But no, really, my heart is with these crustaceans.",
+"audioFileName": "interview1Geoffrey6.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyNormal.png"},
+    {"helen": "helenHappy.png"}
+]
+};
+{
+"startTime": 68,
+"duration": 6,
+"cueType": "none",
+"subtitle": "I am honored to portray a member of this community, and I would never take such a thing lightly.",
+"audioFileName": "interview1Geoffrey7.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyThinking.png"}
+]
+};
+{
+"startTime": 74,
+"duration": 8,
+"cueType": "none",
+"subtitle": "This film will capture their homes beautifully, and I will capture their spirit in an even more shining fashion!",
+"audioFileName": "interview1Geoffrey8.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 82,
+"duration": 5,
+"cueType": "clap",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": []
+};
+{
+"startTime": 87,
+"duration": 3,
+"cueType": "none",
+"subtitle": "I can only assume this has been daunting to pick up!",
+"audioFileName": "interview1Helen6.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 90,
+"duration": 6,
+"cueType": "none",
+"subtitle": "Well let me tell ya Helen, it’s been difficult to pick up a lot with these things !",
+"audioFileName": "interview1Geoffrey9.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 96,
+"duration": 5,
+"cueType": "laugh",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": []
+};
+{
+"startTime": 101,
+"duration": 2,
+"cueType": "none",
+"subtitle": "But I’m dedicated.",
+"audioFileName": "interview1Geoffrey10.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyThinking.png"}
+]
+};
+{
+"startTime": 103,
+"duration": 2,
+"cueType": "none",
+"subtitle": "It’s certainly admirable.",
+"audioFileName": "interview1Helen7.mp3",
+"spriteChanges": [
+    {"helen": "helenToCamera.png"}
+]
+};
+{
+"startTime": 105,
+"duration": 6,
+"cueType": "none",
+"subtitle": "Buttoning a shirt: impossible. Silverware: now it’s unnecessary!",
+"audioFileName": "interview1Geoffrey11.mp3",
+"spriteChanges": [
+    {"helen": "helenHappy.png"},
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 111,
+"duration": 4,
+"cueType": "none",
+"subtitle": "Straws are my new best friend, and my TV only shows one channel.",
+"audioFileName": "interview1Geoffrey12.mp3",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 115,
+"duration": 2,
+"cueType": "none",
+"subtitle": "Well, I hope it’s stuck on this one!",
+"audioFileName": "interview1Helen8.mp3",
+"spriteChanges": [
+    {"helen": "helenToCamera.png"},
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 117,
+"duration": 5,
+"cueType": "laugh",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": [
+    {"guest": "geoffreyHappy.png"}
+]
+};
+{
+"startTime": 122,
+"duration": 4,
+"cueType": "none",
+"subtitle": "Of course! I can’t miss Clap Now for Helen.",
+"audioFileName": "interview1Geoffrey13.mp3",
+"spriteChanges": [
+    {"helen": "helenHappy.png"}
+]
+};
+{
+"startTime": 126,
+"duration": 7,
+"cueType": "none",
+"subtitle": "And we’ll miss you Geoffrey. It’s been a treat to talk to you– Geoffrey Bloom, ladies and gentlemen!",
+"audioFileName": "interview1Helen9.mp3",
+"spriteChanges": [
+    {"helen": "helenToCamera.png"},
+    {"guest": "geoffreyNormal.png"}
+]
+};
+{
+"startTime": 133,
+"duration": 5,
+"cueType": "clap",
+"subtitle": "...",
+"audioFileName": "",
+"spriteChanges": []
+}
