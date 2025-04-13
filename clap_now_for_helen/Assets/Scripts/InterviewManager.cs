@@ -13,12 +13,12 @@ public class InterviewManager : MonoBehaviour
 
     public AnimationCurve curve;
 
-    [SerializeField]
-    private Sprite h1;
-    [SerializeField]
-    private Sprite h2;
-    public Sprite g1;
-    public Sprite g2;
+    //[SerializeField]
+    //private Sprite h1;
+    //[SerializeField]
+    //private Sprite h2;
+    //public Sprite g1;
+    //public Sprite g2;
 
     Dialog[] d = new Dialog[4];
     InterviewSegment[] s = new InterviewSegment[4];
@@ -38,32 +38,32 @@ public class InterviewManager : MonoBehaviour
 
     private void Start()
     {
-        s[0].spriteChanges = new Dictionary<string, Sprite>()
-        {
-            {"Helen", h1},
-            {"Guest",  g1}
-        };
+        //s[0].spriteChanges = new Dictionary<string, Sprite>()
+        //{
+        //    {"Helen", h1},
+        //    {"Guest",  g1}
+        //};
 
-        s[1].spriteChanges = new Dictionary<string, Sprite>()
-        {
-            {"Helen", h2},
-            {"Guest",  g2}
+        //s[1].spriteChanges = new Dictionary<string, Sprite>()
+        //{
+        //    {"Helen", h2},
+        //    {"Guest",  g2}
 
-        };
-        s[2].spriteChanges = new Dictionary<string, Sprite>()
-        {
-            {"Helen", h1}
-        };
-        s[3].spriteChanges = new Dictionary<string, Sprite>()
-        {
-            {"Helen", h2}
-        };
+        //};
+        //s[2].spriteChanges = new Dictionary<string, Sprite>()
+        //{
+        //    {"Helen", h1}
+        //};
+        //s[3].spriteChanges = new Dictionary<string, Sprite>()
+        //{
+        //    {"Helen", h2}
+        //};
 
         var sequence = s;
         interview = new Interview(sequence);
 
-        print(h1);
-        print(h2);
+        //print(h1);
+        //print(h2);
         
     }
 
@@ -78,10 +78,10 @@ public class InterviewManager : MonoBehaviour
             if (seg.startTime <= currentTime && !seg.dialog.isPlaying)
             {
                 seg.dialog.Play();
-                foreach (var change in seg.spriteChanges)
-                {
-                    SpriteManager.instance.ChangeSprite(change.Key, change.Value);
-                }
+                //foreach (var change in seg.spriteChanges)
+                //{
+                //    SpriteManager.instance.ChangeSprite(change.Key, change.Value);
+                //}
                 nextSegmentIndex = i+1;
             }
             else
