@@ -1,0 +1,473 @@
+[
+  {
+    "startTime": 0,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "Our next guest– we greet her with heavy hearts, but gladly welcome her to the stage– Doreen Price!",
+    "audioFileName": "interview3Helen1.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"},
+      {"guest": "guestChair.png"}
+    ]
+  };
+  {
+    "startTime": 8,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "interview3Doreen1.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 13,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "Doreen, thank you so much for being with us today.",
+    "audioFileName": "interview3Helen2.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"},
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 16,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "I am honored to be invited, Helen.",
+    "audioFileName": "interview3Doreen2.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 18,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "Hopefully this can be a bit of a break from everything, yes?",
+    "audioFileName": "interview3Helen3.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 21,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "As many of us know, your husband, the beloved Richard Price of Price and Hikes, passed about a month ago.",
+    "audioFileName": "interview3Helen4.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"}
+    ]
+  };
+  {
+    "startTime": 28,
+    "duration": 5,
+    "cueType": "gasp",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 33,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "Yes, yes… It is nice to get out of the house.",
+    "audioFileName": "interview3Doreen3.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 37,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "I’m sure even just the legal processes have been such a headache.",
+    "audioFileName": "interview3Helen5.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 41,
+    "duration": 9,
+    "cueType": "none",
+    "subtitle": "Oh, it’s all been simply horrendous. I mean, when there’s so much money, and so many people want it…",
+    "audioFileName": "interview3Doreen4.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 50,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "…there’s about three lawyers at the house every day.",
+    "audioFileName": "interview3Doreen5.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 53,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "So awful! Only lawyers? No other individuals of the law?",
+    "audioFileName": "interview3Helen6.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 59,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "If I’m quite honest, they all blur together at this point.",
+    "audioFileName": "interview3Doreen6.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 64,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "I don’t think I would remember if the president had been there in the past week.",
+    "audioFileName": "interview3Doreen7.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 67,
+    "duration": 5,
+    "cueType": "laugh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 72,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "But no, there have been plenty of people with all manner of interests in this affair.",
+    "audioFileName": "interview3Doreen8.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 77,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "We are handling all the appropriate processes with care.",
+    "audioFileName": "interview3Doreen9.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 81,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "As I understand it, Richard’s funeral took place last week.",
+    "audioFileName": "interview3Helen7.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"}
+    ]
+  };
+  {
+    "startTime": 85,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "It was a public event, open to the many customers whose lives he improved with his investments.",
+    "audioFileName": "interview3Doreen10.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 90,
+    "duration": 10,
+    "cueType": "none",
+    "subtitle": "Yes, yes, it was a beautiful ceremony. The casket was covered entirely in blue roses– his favorite.",
+    "audioFileName": "interview3Doreen11.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 100,
+    "duration": 5,
+    "cueType": "ooh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 105,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "Closed casket, I take it? Or did they have to sweep them away?",
+    "audioFileName": "interview3Helen8.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 109,
+    "duration": 5,
+    "cueType": "laugh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 114,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "No, quite closed. Very closed.",
+    "audioFileName": "interview3Doreen12.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 118,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "Did you get to see him one last time, at least?",
+    "audioFileName": "interview3Helen9.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 121,
+    "duration": 1,
+    "cueType": "none",
+    "subtitle": "Well, I…",
+    "audioFileName": "interview3Doreen13.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 122,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "I apologize for my directness– I simply feel for you, I want to ask the questions we’re all wondering!",
+    "audioFileName": "interview3Helen10.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"}
+    ]
+  };
+  {
+    "startTime": 129,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "We’re here with you, Doreen.",
+    "audioFileName": "interview3Helen11.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 131,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "Yes, certainly… I regret to say that I was quite busy leading up to the service.",
+    "audioFileName": "interview3Doreen14.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 138,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "But I saw the casket laid to rest, and I thank those who made the ceremony the beauty that it was.",
+    "audioFileName": "interview3Doreen15.mp3",
+    "spriteChanges": [
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 146,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 151,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "The casket, you say– was he not with it?",
+    "audioFileName": "interview3Helen12.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 154,
+    "duration": 5,
+    "cueType": "gasp",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": [
+      {"guest": "doreenShocked.png"}
+    ]
+  };
+  {
+    "startTime": 159,
+    "duration": 1,
+    "cueType": "none",
+    "subtitle": "Well– I–",
+    "audioFileName": "interview3Doreen16.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 160,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "Oh, I’m so sorry, I meant no offense!",
+    "audioFileName": "interview3Helen13.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"}
+    ]
+  };
+  {
+    "startTime": 162,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "This is understandably upsetting, I can’t imagine the pain you must be feeling.",
+    "audioFileName": "interview3Helen14.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 167,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "It– yes. But I try to keep my chin up…",
+    "audioFileName": "interview3Doreen17.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 172,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "…even though finding his belongings strewn through the house has gone from frustrating to a bit sad.",
+    "audioFileName": "interview3Doreen18.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 179,
+    "duration": 5,
+    "cueType": "laugh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 184,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "I take it he wasn’t a very tidy man, then?",
+    "audioFileName": "interview3Helen15.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 188,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "He tasted– I mean, he tidied–",
+    "audioFileName": "interview3Doreen19.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 193,
+    "duration": 5,
+    "cueType": "gasp",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": [
+      {"guest": "doreenShocked.png"}
+    ]
+  };
+  {
+    "startTime": 198,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "Good gracious! Did I hear that right– you ate him?",
+    "audioFileName": "interview3Helen16.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 204,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "Well, fine! Yes, I did! And I shan’t apologize!",
+    "audioFileName": "interview3Doreen20.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"}
+    ]
+  };
+  {
+    "startTime": 209,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "He never thanked me for the upkeep of our beautiful home, he was always at work until the latest hours…",
+    "audioFileName": "interview3Doreen21.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 215,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "…he hardly made interesting conversation during dinnertime!",
+    "audioFileName": "interview3Doreen22.mp3",
+    "spriteChanges": [
+      {"guest": "doreenShocked.png"}
+    ]
+  };
+  {
+    "startTime": 219,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "So you made it more interesting?",
+    "audioFileName": "interview3Helen17.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 223,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "It certainly was more interesting, yes! And his money is nice too.",
+    "audioFileName": "interview3Doreen23.mp3",
+    "spriteChanges": [
+      {"guest": "doreenSly.png"}
+    ]
+  };
+  {
+    "startTime": 228,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "Well, never a dull moment on Clap Now for Helen! Doreen Price, everybody!",
+    "audioFileName": "interview3Helen18.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"},
+      {"guest": "doreenNormal.png"}
+    ]
+  };
+  {
+    "startTime": 235,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  }
+]

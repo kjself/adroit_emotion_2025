@@ -1,0 +1,422 @@
+[
+  {
+    "startTime": 0,
+    "duration": 9,
+    "cueType": "none",
+    "subtitle": "Our next guest– his product sucks, he blows– up-and-coming innovator, Roy G. Fish!",
+    "audioFileName": "interview2Helen1.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"},
+      {"guest": "guestChair.png"}
+    ]
+  };
+  {
+    "startTime": 9,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 14,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "As I understand it, you have something pretty remarkable to share with us, do you not?",
+    "audioFileName": "interview2Helen2.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 19,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "That is correct! This is the first of its kind, a real one-in-a-million dollar idea.",
+    "audioFileName": "interview2Roy1.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 26,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "One-in-a-million dollar?",
+    "audioFileName": "interview2Helen3.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 28,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "One-in-a-million dollar!",
+    "audioFileName": "interview2Roy2.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"},
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 31,
+    "duration": 5,
+    "cueType": "laugh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 36,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "If it’s so one-in-a-million, how did you possibly come up with it?",
+    "audioFileName": "interview2Helen4.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"},
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 41,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "Well you see Helen, this seems to be a regular vacuum, yes? But it has a very special property!",
+    "audioFileName": "interview2Roy3.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 49,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "For years, my friends have always told me, “Roy, I wish I had a blowhole like yours...",
+    "audioFileName": "interview2Roy4.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 56,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "...and I eventually thought, why not give it to them!",
+    "audioFileName": "interview2Roy5.mp3",
+    "spriteChanges": [
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 59,
+    "duration": 5,
+    "cueType": "ooh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 64,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "But how could you possibly do such a thing?",
+    "audioFileName": "interview2Helen5.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"},
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 67,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "Easily! The humble vacuum creates an enormous intake of air, which only gets wasted within the machine.",
+    "audioFileName": "interview2Roy6.mp3",
+    "spriteChanges": [
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 75,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "I have now created a Backuum, which makes use of this air…",
+    "audioFileName": "interview2Roy7.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 79,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "…reversing and releasing the suction to give each and every user their own blowhole!",
+    "audioFileName": "interview2Roy8.mp3",
+    "spriteChanges": [
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 86,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 91,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "Absolutely fascinating!",
+    "audioFileName": "interview2Helen6.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 94,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "Indeed! And you can get in on this one-in-a-million dollar innovation right now!",
+    "audioFileName": "interview2Roy9.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"},
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 102,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "Well, I could certainly spare one in a million dollars.",
+    "audioFileName": "interview2Helen7.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 106,
+    "duration": 5,
+    "cueType": "laugh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 111,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "Do tell me more.",
+    "audioFileName": "interview2Helen8.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 113,
+    "duration": 8,
+    "cueType": "none",
+    "subtitle": "Imagine with me, Helen. You’re throwing a party, but you’re just not feeling that pizzazz from your decor.",
+    "audioFileName": "interview2Roy10.mp3",
+    "spriteChanges": [
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 121,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "You have some confetti, but your guests are about to arrive!",
+    "audioFileName": "interview2Roy11.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 125,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "How can you possibly get that final touch before they knock on your door?",
+    "audioFileName": "interview2Roy12.mp3",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 129,
+    "duration": 1,
+    "cueType": "none",
+    "subtitle": "How, indeed?",
+    "audioFileName": "interview2Helen9.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 130,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "Just pour your confetti in the opening of the convenient Backuum…",
+    "audioFileName": "interview2Roy13.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"},
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 136,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "…and the confetti will come right back out, thrown into the air in perfect array!",
+    "audioFileName": "interview2Roy14.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 142,
+    "duration": 5,
+    "cueType": "ooh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 147,
+    "duration": 7,
+    "cueType": "none",
+    "subtitle": "That is simply delightful Roy! How can the audience at home get their hands on one of these lovely machines?",
+    "audioFileName": "interview2Helen10.mp3",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 154,
+    "duration": 1,
+    "cueType": "none",
+    "subtitle": "Well that’s simple!",
+    "audioFileName": "interview2Roy15.mp3",
+    "spriteChanges": [
+      {"guest": "royHappy.png"}
+    ]
+  };
+  {
+    "startTime": 155,
+    "duration": 10,
+    "cueType": "none",
+    "subtitle": "For only three installments of $109.99.99 you can become a proud owner of a cutting edge Backuum!",
+    "audioFileName": "interview2Roy16.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 165,
+    "duration": 2,
+    "cueType": "none",
+    "subtitle": "A sensible number!",
+    "audioFileName": "interview2Helen11.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 167,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 172,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "This is a wonderful product, and I’m sure it could spice up the home of many an audience member.",
+    "audioFileName": "interview2Helen12.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"},
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 178,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "And yourself, Helen! I wouldn’t want you to miss out on this brilliant opportunity.",
+    "audioFileName": "interview2Roy17.mp3",
+    "spriteChanges": [
+      {"helen": "helenSerious.png"},
+      {"guest": "royHappy.png"},
+    ]
+  };
+  {
+    "startTime": 183,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "In fact, if you’re looking to invest, we could give you a custom offer!",
+    "audioFileName": "interview2Roy18.mp3",
+    "spriteChanges": []
+  };
+  {
+    "startTime": 188,
+    "duration": 5,
+    "cueType": "none",
+    "subtitle": "Oh, my! This really is a one-in-a-million dollar opportunity.",
+    "audioFileName": "interview2Helen13.mp3",
+    "spriteChanges": [
+      {"helen": "helenHappy.png"}
+    ]
+  };
+  {
+    "startTime": 193,
+    "duration": 6,
+    "cueType": "ooh",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 198,
+    "duration": 6,
+    "cueType": "none",
+    "subtitle": "This could be a big break for you and the smart people here at Clap Now for Helen!",
+    "audioFileName": "interview2Roy19.mp3",
+    "spriteChanges": [
+      {"guest": "royPresenting.png"}
+    ]
+  };
+  {
+    "startTime": 204,
+    "duration": 3,
+    "cueType": "none",
+    "subtitle": "It’s been enormously interesting just to have you.",
+    "audioFileName": "interview2Helen14.mp3",
+    "spriteChanges": [
+      {"guest": "royNormal.png"}
+    ]
+  };
+  {
+    "startTime": 207,
+    "duration": 4,
+    "cueType": "none",
+    "subtitle": "Roy G. Fish and his Backuum, ladies and gentlemen!",
+    "audioFileName": "interview2Helen15.mp3",
+    "spriteChanges": [
+      {"helen": "helenToCamera.png"}
+    ]
+  };
+  {
+    "startTime": 211,
+    "duration": 5,
+    "cueType": "clap",
+    "subtitle": "...",
+    "audioFileName": "",
+    "spriteChanges": []
+  }
+]
