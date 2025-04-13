@@ -30,10 +30,6 @@ public class InterviewManager : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        // score += curve.Evaluate((currentTime-current.startTime)/current.durationSeconds) * Time.deltaTime;
-        //Debug.Log(score);
-        //Debug.Log(curve.Evaluate((currentTime - current.startTime) / current.durationSeconds));
-        //by setting i to the currentSegmentIndex and then setting currentSegmentIndex after means we're always incrementing
         for (int i = nextSegmentIndex; i < interview.sequence.Length; i++)
         {
         
@@ -51,7 +47,6 @@ public class InterviewManager : MonoBehaviour
 
         if (activeCue != CueType.NONE)
         {
-            Debug.Log(activeCue);
             var currentSegment = interview.sequence[nextSegmentIndex-1];
             Score(currentSegment);
         }
@@ -64,7 +59,7 @@ public class InterviewManager : MonoBehaviour
             SetCueDisplay(cueType);
             PlayCueAudio(cueType);
             activeCue = cueType;
-            Debug.Log(cueType + " Button Down");
+            //Debug.Log(cueType + " Button Down");
 
         }
 
@@ -77,7 +72,7 @@ public class InterviewManager : MonoBehaviour
             SetCueDisplay(CueType.NONE);
             PlayCueAudio(cueType);
             activeCue= CueType.NONE;
-            Debug.Log(cueType + " Button Up");
+            //Debug.Log(cueType + " Button Up");
         }
     }
 
@@ -100,11 +95,13 @@ public class InterviewManager : MonoBehaviour
 
     private void Score(InterviewSegment segment)
     {
-        Debug.Log("Seg: " + segment.cueType + " "+segment.dialog.subtitle);
+        //Debug.Log("Seg: " + segment.cueType + " "+segment.dialog.subtitle);
         if(activeCue== segment.cueType)
         {
-            Debug.Log(curve.Evaluate((currentTime - segment.startTime) / segment.durationSeconds));
+            var curveHeight = curve.Evaluate((currentTime - segment.startTime) / segment.durationSeconds);
+            GameManager.instance.score += curveHeight * Time.deltaTime;
         }
+        //Debug.Log("Score: " + GameManager.instance.score);
     }
         
 }

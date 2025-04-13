@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;//this is a singleton
 
     public InterviewManager interviewManager;
-    
+    public float score;
 
     private void Awake()
     {
@@ -26,4 +26,5 @@ public class GameManager : MonoBehaviour
         }
         interviewManager = GetComponent<InterviewManager>();
     }
+
 }
