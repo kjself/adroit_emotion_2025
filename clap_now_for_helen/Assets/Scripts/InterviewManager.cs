@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InterviewManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class InterviewManager : MonoBehaviour
     float currentTime = 0;
     int nextSegmentIndex = 0;
     CueType activeCue = CueType.NONE;
+    public TMP_Text cueDisplay;
 
     public AnimationCurve curve;
 
@@ -84,6 +86,16 @@ public class InterviewManager : MonoBehaviour
         //then set
         //else return error
         //Debug.Log("Displaying Cue");
+        if(activeCue != cueType)
+        {
+            //Debug.Log(cueType);
+            cueDisplay.text = cueType.ToString();
+        }
+
+        else
+        {
+            Debug.Log("What the fuck bro");
+        }
         return true;
     }
 
