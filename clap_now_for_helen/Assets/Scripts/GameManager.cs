@@ -9,8 +9,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;//this is a singleton
-    [HideInInspector]
-    public InterviewManager interviewManager;
+    //[HideInInspector]
+    //public InterviewManager interviewManager;
     [HideInInspector]
     public float score;
 
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this);
         }
-        interviewManager = GetComponent<InterviewManager>();
+        //InterviewManager.instance = GetComponent<InterviewManager>();
     }
 
 }

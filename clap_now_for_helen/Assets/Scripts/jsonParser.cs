@@ -26,48 +26,8 @@ public class jsonParser : MonoBehaviour
 ";
 
 
-
-    public class TestClass
-    {
-        public string name;
-        public int age;
-        public string cueType;
-        public TestClass2[] spriteChanges;
-    }
-
-    public class TestClass2
-    {
-        public string helen;
-        public string chair;
-
-
-    }
-
-    public class Test3
-
-    {
-        public Dictionary<string, string> dict;
-    }
-
+    [System.Serializable]
     public class SegmentIntermediary
-    {
-        public float startTime;
-        public float duration;
-        public string cueType;
-        public string subtitle;
-        public string audioFileName;
-        //public TestClass2[] spriteChanges;
-    }
-
-    [System.Serializable]
-    public class SpriteChange
-    {
-        public string helen;
-        public string chair;
-    }
-
-    [System.Serializable]
-    public class InterviewData
     {
         public int startTime;
         public float duration;
@@ -77,6 +37,7 @@ public class jsonParser : MonoBehaviour
         public Dictionary<string, string> spriteChanges; // An array of SpriteChange objects
     }
 
+    public Dictionary<string, CueType> cueTypeMap;
 
     void Start()
     {
@@ -96,16 +57,52 @@ public class jsonParser : MonoBehaviour
         //print(str);
 
 
-        var segment = JsonUtility.FromJson<InterviewData>(test0);
+
+        cueTypeMap = new Dictionary<string, CueType>()
+        {
+            {"none", CueType.NONE },
+            { "clap", CueType.CLAP },
+            { "laugh", CueType.LAUGH },
+            { "ooh", CueType.OOH },
+            { "boo", CueType.BOO },
+            { "gasp", CueType.GASP },
+            { "scream", CueType.SCREAM }
+            // You can add more mappings here as needed
+        };
+
+        //TextAsset jsonFile = Resources.Load<TextAsset>("data");
+        var jsonFileText = json;
+        var segStrings = jsonFileText.Trim().Split(";");
+        var segments = new List<SegmentIntermediary>();
+        foreach(var segString in segStrings)
+        {
+            segments.Add(ParseJsonToSegment(segString));
+        }
+
+        var sequence = new List<InterviewSegment>();
+        foreach(var segment in segments)
+        {
+            sequence.Add(MapInterToFinal(segment));
+        }
+
+        //interview.sequence = sequence.TO Array()
+        //print("end");
+
+        InterviewManager.instance.interview = new Interview(sequence.ToArray());
+    }
+
+    SegmentIntermediary ParseJsonToSegment(string text)
+    {
+        var segment = JsonUtility.FromJson<SegmentIntermediary>(text);
 
         string targetKey = "\"spriteChanges\"";
-        int startIndex = test0.IndexOf(targetKey);
-        startIndex = test0.IndexOf("[", startIndex); //go to start of array
+        int startIndex = text.IndexOf(targetKey);
+        startIndex = text.IndexOf("[", startIndex); //go to start of array
 
-        int end = test0.IndexOf("]", startIndex);//fine end of array
+        int end = text.IndexOf("]", startIndex);//fine end of array
 
         //int newStart = startIndex + targetKey.Length + 1;
-        var fuck = test0.Substring(startIndex + 1, end - startIndex - 1);//add/sub 1 to cut out [ and ]
+        var fuck = text.Substring(startIndex + 1, end - startIndex - 1);//add/sub 1 to cut out [ and ]
 
         //print(fuck);
         //segment.spriteChanges = JsonUtility.FromJson<Dictionary<string, string>>("{" + fuck+"}");
@@ -121,7 +118,42 @@ public class jsonParser : MonoBehaviour
         }
 
         segment.spriteChanges = newDict;
-
-        //print("end");
+        return segment;
     }
+
+     InterviewSegment MapInterToFinal(SegmentIntermediary segInt)
+    {
+        var dialog = new Dialog(segInt.subtitle);
+        var segment = new InterviewSegment(dialog, cueTypeMap[segInt.cueType], segInt.startTime, segInt.duration);
+
+        return segment;
+
+    }
+
+    private string json = @"
+  {
+    ""startTime"": 0,
+    ""duration"": 3,
+    ""cueType"": ""none"",
+    ""subtitle"": ""Our next guest– we’re dying to see him, I’m dying to get to know him, he’s trying… method acting?"",
+    ""audioFileName"": ""interview1Helen1.mp3"",
+    ""spriteChanges"": [
+    	{""helen"": ""helenToCamera.png""},
+    	{ ""chair"": ""guestChair.png""}
+    ]
+  };
+{
+    ""startTime"": 3,
+    ""duration"": 2,
+    ""cueType"": ""clap"",
+    ""subtitle"": ""Geoffrey Bloom!"",
+    ""audioFileName"": ""interview1Helen2.mp3"",
+    ""spriteChanges"": [
+
+        { ""helen"": ""helenHappy.png""}
+    ]
+  }
+ 
+";
+
 }

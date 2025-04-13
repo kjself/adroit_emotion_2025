@@ -5,7 +5,8 @@ using TMPro;
 
 public class InterviewManager : MonoBehaviour
 {
-    Interview interview;
+    public static InterviewManager instance { get; private set;}
+    public Interview interview;
     float currentTime = 0;
     int nextSegmentIndex = 0;
     CueType activeCue = CueType.NONE;
@@ -23,24 +24,30 @@ public class InterviewManager : MonoBehaviour
     //public Sprite g1;
     //public Sprite g2;
 
-    Dialog[] d = new Dialog[4];
-    InterviewSegment[] s = new InterviewSegment[4];
+ 
 
     public InterviewManager()
     {
-        d[0] = new Dialog("1st");
-        s[0] = new InterviewSegment(d[0], CueType.NONE, 0, 3);
-        d[1] = new Dialog("2 hi ther");
-         s[1] = new InterviewSegment(d[1], CueType.NONE, 3, 5);
-         d[2] = new Dialog("");
-         s[2] = new InterviewSegment(d[2], CueType.CLAP, 8, 5);
-        d[3] = new Dialog("4 start again!!!");
-        s[3] = new InterviewSegment(d[3], CueType.NONE, 13, 5);
 
+    }
+
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
     }
 
     private void Start()
     {
+
         //s[0].spriteChanges = new Dictionary<string, Sprite>()
         //{
         //    {"Helen", h1},
@@ -62,11 +69,10 @@ public class InterviewManager : MonoBehaviour
         //    {"Helen", h2}
         //};
 
-        var sequence = s;
-        interview = new Interview(sequence);
+
 
         //total expected time of a given interview
-        interviewTime = interview.sequence[interview.sequence.Length - 1].startTime + interview.sequence[interview.sequence.Length - 1].durationSeconds;
+        Invoke("CalcInterviewTime", 5);
 
         //print(h1);
         //print(h2);
@@ -99,6 +105,7 @@ public class InterviewManager : MonoBehaviour
 
         if (currentTime >= interviewTime)
         {
+            if(cardDisplay != null)
             cardDisplay.CardShow();
         }
 
@@ -158,5 +165,12 @@ public class InterviewManager : MonoBehaviour
             GameManager.instance.score += curveHeight * Time.deltaTime;
         }
     }
-        
+
+    private void CalcInterviewTime()
+    {
+        interviewTime = interview.sequence[interview.sequence.Length - 1].startTime + interview.sequence[interview.sequence.Length - 1].durationSeconds;
+
+    }
+
+
 }
