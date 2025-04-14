@@ -115,6 +115,9 @@ public class jsonParser : MonoBehaviour
                 //print(chargeString);
                 var cleanStr = chargeString.Replace("{", "").Replace("}", "").Trim();
                 var dictPairStr = cleanStr.Split(':');
+                dictPairStr[0]= dictPairStr[0].Replace("\"", "").Trim();
+                dictPairStr[1] = dictPairStr[1].Split(".")[0].Replace("\"", "").Trim(); //cut off file extension from value of dict
+
                 newDict.Add(dictPairStr[0], dictPairStr[1]);
             }
         }
@@ -127,7 +130,7 @@ public class jsonParser : MonoBehaviour
         var audioFileNameNoExtension = segInt.audioFileName.Split(".")[0];
         var dialog = new Dialog(segInt.subtitle, audioFileNameNoExtension);
         var segment = new InterviewSegment(dialog, cueTypeMap[segInt.cueType], segInt.startTime, segInt.duration);
-
+        segment.SetSpriteChanges(segInt.spriteChanges);
         return segment;
 
     }

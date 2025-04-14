@@ -9,7 +9,7 @@ public class SpriteManager : MonoBehaviour
     public static SpriteManager instance;
     public Image[] images;
 
-
+    public Sprite[] sprites;
     private void Awake()
     {
         if (instance != null)
@@ -38,12 +38,31 @@ public class SpriteManager : MonoBehaviour
         Image image = Array.Find(images, image => image.name == imageName);
         image.sprite = newSprite;
     }
-
-    public void ChangeSprite(string imageName, string spriteFileName)
+    public void ChangeSprite(string imageName, string newSpriteName)
     {
-        var sprite = Resources.Load<Sprite>(spriteFileName);
-        ChangeSprite(imageName, sprite);
+        print("Sprite trying to change to: " + newSpriteName);
+        print(sprites);
+
+        Sprite sprite = null;
+        foreach (Sprite s in sprites)
+        {
+            if (s.name == newSpriteName)
+            {
+                sprite = s;
+            }
+        }
+        //Sprite sprite = Array.Find(sprites, sprite => sprite.name == newSpriteName);
+        if(sprite != null)
+        {
+            ChangeSprite(imageName, sprite);
+        }
     }
+
+    //public void ChangeSprite(string imageName, string spriteFileName)
+    //{
+    //    var sprite = Resources.Load<Sprite>(spriteFileName);
+    //    ChangeSprite(imageName, sprite);
+    //}
 
     public void ChangeSprites(string imageName, string[] spriteFileNames)
     {

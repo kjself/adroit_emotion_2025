@@ -175,6 +175,15 @@ MonoBehaviour:
   images:
   - {fileID: 923895351}
   - {fileID: 551000795}
+  sprites:
+  - {fileID: 21300000, guid: 7644f6c80d12b7744b1a39c814f0e750, type: 3}
+  - {fileID: 21300000, guid: 689f2793696cb3d41b41917613bbde6c, type: 3}
+  - {fileID: 21300000, guid: 2929f118ceecc4e43ae645e373355f90, type: 3}
+  - {fileID: 21300000, guid: 67bd4e1eb17f72d438b80a7e3c33bfa1, type: 3}
+  - {fileID: 21300000, guid: 173ceb50a641e2440ad00da1195169cd, type: 3}
+  - {fileID: 21300000, guid: abc3367579c30a4408499350f6681531, type: 3}
+  - {fileID: 21300000, guid: 173ceb50a641e2440ad00da1195169cd, type: 3}
+  - {fileID: 21300000, guid: 01ae66975c929d543ba928639a3ff44b, type: 3}
 --- !u!1 &274107119
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +625,7 @@ GameObject:
   - component: {fileID: 551000796}
   - component: {fileID: 551000795}
   m_Layer: 5
-  m_Name: Helen
+  m_Name: helen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1115,7 +1124,7 @@ GameObject:
   - component: {fileID: 923895352}
   - component: {fileID: 923895351}
   m_Layer: 5
-  m_Name: Guest
+  m_Name: guest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2048,7 +2057,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 275, y: 74}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147187313
 MonoBehaviour:
