@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     //[HideInInspector]
     //public InterviewManager interviewManager;
     [HideInInspector]
-    public float score;
+    public float score = 1000;
 
     private void Awake()
     {

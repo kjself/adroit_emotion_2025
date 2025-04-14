@@ -13,6 +13,8 @@ public class InterviewManager : MonoBehaviour
     public TMP_Text cueDisplay;
     float interviewTime;
     private ShowCard cardDisplay;
+
+    public TMP_Text ScoreBoard;
     
 
     public AnimationCurve curve;
@@ -163,6 +165,7 @@ public class InterviewManager : MonoBehaviour
         {
             var curveHeight = curve.Evaluate((currentTime - segment.startTime) / segment.durationSeconds);
             GameManager.instance.score += curveHeight * Time.deltaTime;
+            ScoreBoard.text = "ratings: " + ((int)(100*GameManager.instance.score)).ToString();
         }
     }
 

@@ -6,7 +6,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     private Dictionary<string, CueType> cueDict;
-    private InterviewManager interviewManager;
+    //private InterviewManager interviewManager;
 
     public Sprite h1;
     public Sprite h2;
@@ -25,7 +25,7 @@ void Start()
             { "c", CueType.GASP},
             { "v", CueType.SCREAM}
         };
-        interviewManager = GetComponent<InterviewManager>();
+        //interviewManager = GetComponent<InterviewManager>();
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ void Start()
             {
                 if (Input.GetKeyDown(CueDictPair.Key))
                 {
-                    interviewManager.CuePressed(CueDictPair.Value);
+                    InterviewManager.instance.CuePressed(CueDictPair.Value);
                     break;
                 }
             }
@@ -48,7 +48,7 @@ void Start()
         {
             if (Input.GetKeyUp(CueDictPair.Key))
             {
-                interviewManager.CuePressStop(CueDictPair.Value);
+                InterviewManager.instance.CuePressStop(CueDictPair.Value);
                 break;
             }
         }
