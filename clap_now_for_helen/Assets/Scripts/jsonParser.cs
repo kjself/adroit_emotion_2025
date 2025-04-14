@@ -124,7 +124,8 @@ public class jsonParser : MonoBehaviour
 
      InterviewSegment MapInterToFinal(SegmentIntermediary segInt)
     {
-        var dialog = new Dialog(segInt.subtitle);
+        var audioFileNameNoExtension = segInt.audioFileName.Split(".")[0];
+        var dialog = new Dialog(segInt.subtitle, audioFileNameNoExtension);
         var segment = new InterviewSegment(dialog, cueTypeMap[segInt.cueType], segInt.startTime, segInt.duration);
 
         return segment;

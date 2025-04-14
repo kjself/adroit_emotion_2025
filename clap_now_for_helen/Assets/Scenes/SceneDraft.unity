@@ -1845,6 +1845,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  dialogContainer: {fileID: 4196375936374969870, guid: 72969009293f72345a32e8cfbd5a5c66, type: 3}
 --- !u!4 &1802611676
 Transform:
   m_ObjectHideFlags: 0

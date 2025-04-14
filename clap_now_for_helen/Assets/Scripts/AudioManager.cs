@@ -11,12 +11,15 @@ public class audioManager : MonoBehaviour
 
     public static audioManager Instance;
 
-    public List<Sound> sounds;
+    public List<Sound> sounds = new List<Sound>();
     public Sound audienceSound;
 
     //sounds = {cue sounds, dialoge, ...}
     private Dictionary<CueType, Sound> cueSoundDist = new Dictionary<CueType, Sound>();
     public Sound[] cueSounds;
+
+
+    public DialogContainer dialogContainer;
 
     private void Awake()
     {
@@ -29,6 +32,12 @@ public class audioManager : MonoBehaviour
             cueSoundDist.Add(cueTypes[i], cueSounds[i]); //there mustn't be less sounds that CueTypes
 
             sounds.Add(cueSounds[i]);
+        }
+
+        foreach(var sound in dialogContainer.dialogSounds)
+        {
+            sound.name = sound.clip.name;
+            sounds.Add(sound);
         }
 
         foreach (Sound s in sounds)
@@ -62,6 +71,7 @@ public class audioManager : MonoBehaviour
     public void Play(string name)
     {
         //Finding the sound such that the sound's name is equal to the given name
+        print("Name of sounds to be played: " + name);
         Sound s = sounds.Find(sound => sound.name == name);
         s.source.Play();
     }
